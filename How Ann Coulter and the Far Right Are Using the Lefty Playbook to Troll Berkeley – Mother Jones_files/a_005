@@ -1,0 +1,94 @@
+
+function AT_OVERLAY_CLOSE() {
+        document.getElementById('AT_OVERLAY_LAYER').style.visibility = 'hidden';
+       document.getElementById('AT_OVERLAY_BACKGROUND').style.visibility = 'hidden';
+       document.getElementById('AT_OVERLAY_CONTAINER').style.visibility = 'hidden';
+}
+
+function MJ_checkOverlay(form) {
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  var address = form.cons_email.value;
+
+  if(reg.test(address) != false) {
+    form.method = "post";
+    return true;
+  }
+  else {
+    alert("Please enter a valid email address.");
+    form.cons_email.focus();
+    return false;
+  }
+}
+document.write("<style type=\"text/css\">\n");
+document.write("<!--\n");
+document.write("#container {\n");
+document.write("	margin:0;\n");
+document.write("	padding:0;\n");
+document.write("	z-index:20000001;\n");
+document.write("}\n");
+
+document.write("#container p, #container  ul, #container  table, #container fieldset {margin: 0;}\n");
+
+document.write("div#AT_OVERLAY_LAYER {\n");
+document.write("    position:fixed;\n");
+document.write("    width:640px;\n");
+document.write("    height: 510px;\n");
+document.write("    top:50%;\n");
+document.write("    left:50%;\n");
+document.write("    margin: -252px 0 0 -320px; /*half the height, half the width*/\n");
+document.write("    z-index:20000002;\n");
+document.write("		background-image: url('http://aka-cdn-ns.adtechus.com/apps/80/Ad9520720St3Sz67Sq25980316V6Id1/PTP_Trump.png');\n");
+document.write("		background-repeat: no-repeat;\n");
+document.write("		background-position: bottom;\n");
+document.write("    background-color: #FFFFFF;\n");
+document.write("}\n");
+
+document.write(".background{\n");
+document.write("       position:fixed;\n");
+document.write("       top:0px;\n");
+document.write("       left:0px;\n");
+document.write("       width:100%;\n");
+document.write("       height:100%;\n");
+document.write("       background-color:#000000;\n");
+document.write("       z-index:20000000;\n");
+document.write("       /* These three lines are for transparency in all browsers. */\n");
+document.write("       -ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)\";\n");
+document.write("       filter: alpha(opacity=70);\n");
+document.write("       opacity:.7;\n");
+document.write("}\n");
+
+document.write("-->\n");
+document.write("</style>\n");
+
+
+document.write("<div class=\"container\" id=\"AT_OVERLAY_CONTAINER\">\n");
+
+document.write("<div id=\"AT_OVERLAY_LAYER\" class=\"content\">\n");
+document.write("		<div>\n");
+document.write("			<img src=\"http://aka-cdn-ns.adtechus.com/apps/80/Ad9520720St3Sz67Sq25980316V6Id1/close_btn.gif\" alt=\"Close\" width=\"22\" height=\"22\" border=\"0\" style=\"float:left;margin:3px 3px 3px 3px;\" usemap=\"#support_mojo\" />\n");
+document.write("			<map name=\"support_mojo\" id=\"support_mojo\"><area shape=\"rect\" coords=\"0,0,22,22\" onclick=\"AT_OVERLAY_CLOSE();return false;\" alt=\"Close\"></map>\n");
+document.write("		</div>\n");
+document.write("<div style=\"font-family: Georgia,'Times New Roman','Bitstream Vera Serif',serif;font-style: italic;font-size: 16px;text-align: center; margin: 4px 0px 0px 0px;\">\n");
+document.write("	Advertisement</div>\n");
+document.write("    <form action=\"https://api.maropost.com/accounts/585/forms/4390/subscribe/688fac430b28801fc503432be0c7a8cab51110dc\" method=\"post\" onsubmit=\"return MJ_checkOverlay(this);\" id=\"maropostForm\">\n");
+document.write("				<div style=\"margin-top: 295px;margin-left: 90px;width: 280px;padding: 5px;color:#000;\">\n");
+document.write("					\n");
+document.write("<input type=\"text\" id=\"cons_email\" name=\"contact_fields[email]\" value=\"Email\" style=\"margin-left: 90px; padding-left: 5px; width: 450px;float:left;border:0px solid #999;height:20px;color:#000000; text-align: center;\" onclick=\"if (this.value == 'Email') { this.value = '';}\" onblur=\"if(this.value == '') {this.value='Email';}\" /><br />\n");
+
+document.write("<input type=\"text\" maxlength=\"40\" size=\"10\" value=\"Zip Code\" id=\"cons_zip_code\" name=\"custom_fields[zip_code]\" style=\"margin-top: 8px; margin-left: 90px; padding-left: 5px; width: 450px;float:left;border:0px solid #999;height:20px;color:#000000; text-align: center;\" onclick=\"if (this.value == 'Zip Code') { this.value = '';}\" onblur=\"if(this.value == '') {this.value='Zip Code';}\" /><br />\n");
+
+document.write("<input type=\"hidden\" name=\"custom_fields[overlay_timestamp]\" id=\"submit_date\" value=\"\" />\n");
+document.write("<input type=\"image\" src=\"http://aka-cdn-ns.adtechus.com/apps/80/Ad9520720St3Sz67Sq25980316V6Id1/PTP_Button.png\" style=\"margin-top: 15px; margin-left: 140px;\" width=\"176\" height=\"44\" name=\"commit\" value=\"Submit\" />\n");
+document.write("				</div>\n");
+document.write("			</form>\n");
+document.write("</div>\n");
+document.write("<div class=\"background\" id=\"AT_OVERLAY_BACKGROUND\">\n");
+document.write("<img src=\"http://aka-cdn-ns.adtechus.com/apps/80/Ad9520720St3Sz67Sq25980316V6Id1/background.png\" alt=\"Close\" width=\"1920\" height=\"1080\" border=\"0\" usemap=\"#support_mojo_2\" />\n");
+document.write("	<map name=\"support_mojo_2\" id=\"support_mojo_2\"><area shape=\"rect\" coords=\"0,0,1920,1080\" onclick=\"AT_OVERLAY_CLOSE();return false;\" alt=\"Close\"></map>\n");
+document.write("</div>\n");
+
+
+document.write("<scr"+"ipt src=\""+(window.location.protocol=='https:' ? "https://aka-cdn.adtechus.com" : "http://aka-cdn-ns.adtechus.com")+"/media/moat/adtechbrands092348fjlsmdhlwsl239fh3df/moatad.js#moatClientLevel1=5443&moatClientLevel2=194722&moatClientLevel3=0&moatClientLevel4=2864008&zMoatMaster=-1&zMoatFlight=9520720&zMoatBanner=25980316&zURL=http&zMoatPlacementId=2864008&zMoatAdId=9520720&zMoatCreative=0&zMoatBannerID=1&zMoatCustomVisp=50&zMoatCustomVist=1000&zMoatIsAdvisGoal=0&zMoatEventUrl=&zMoatSize=67&zMoatSubNetID=1&zMoatisSelected=1&zMoatadServer=adserver.adtechus.com&zMoatadVisServer=&zMoatSamplingRate=23&zMoatliveTestCookie=&zMoatRefSeqId=DUCAXYgAjNA&zMoatImpRefTs=1498001899&zMoatAlias=overlay&zMoatVert=&zMoatBannerInfo=482281812\" type=\"text/javascript\"></scr"+"ipt>");
+document.write('<img src="http://atpixelus.alephd.com/post_adtech?RLgJMlxZNmwDrvtL.Zfe9aSb0eQDawmPnXLrRwtsqPFxldD.oMSCcuvnUline41jzwTfHZ2W8tKoHHqCPhgicjCINPiPWmDa2bp8qaIVG67VWLSok42pDYF4XZPSNZOmRGwwpMuCISHMCYuMHX7kkL324m7SgwTADW8vTMVJy41fVGEeZA8mMcxaX1g2imo8B3YdxxBmnvHqmbVIQ-duCg==" width="1" height="1"  style="display:none;">');
+document.write('<img src="http://adt.pxl.ace.advertising.com/cfcm.ashx?providerId=1010&extMatch=1&rcode=1" width="1" height="1" style="display:none;">');
+document.write('<img src="http://cm.g.doubleclick.net/pixel?google_nid=adtech_dbm&google_cm&google_sc" width="1" height="1" style="display:none;">');

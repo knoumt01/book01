@@ -1,0 +1,7 @@
+document.write("<!-- Mother Jones House Blank Siteskin default tag--!>\n");
+var imageperf=new Image();
+imageperf.src='http://adserverec.adtechus.com/adperf/3.0/5443/3003390/0/1559/AdId=5024648;BnId=1;ct=3160264839;st=10257;ku=0;ccid=1;scid=1053678;iid=439;zcid=18182;subnid=1;camnid=5443;camsubnid=1;bnnr=23132445;ctlen=148;';
+
+document.write('<img src="http://atpixelus.alephd.com/post_adtech?RoZYflDjHQMN2VDitDCNmEnXjmPZZyuGzFwh.PNvrUaXONcj7xipoEtuqf1Rwe7hXiP..c1UMXi23i2tngNkgno6GhS4OwFvhgnWvGst8NzubWJU8Re8wtgDBo2KVTVTSoEa3gwYYFD3yy173DZYyIFDjBRF7q7y7VawevvQPH1DHEdS8NRxthNVwPlSMydIn9INFiUR63rKOasL2I3dHg==" width="1" height="1"  style="display:none;">');
+document.write('<img src="http://Aol-match.dotomi.com/aol/match?cb=https://ums.adtechus.com/mapuser?providerid=1013;userid=$UID" width="1" height="1" style="display:none;">');
+document.write('<img src="http://adt.pxl.ace.advertising.com/cfcm.ashx?providerId=1010&extMatch=1&rcode=1" width="1" height="1" style="display:none;">');

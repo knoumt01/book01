@@ -1,0 +1,7 @@
+
+document.write("<SCR"+"IPT SRC=\"http://ads.pubsqrd.com/ttj?id=6970987&cb=2673580\" TYPE=\"text/javascript\"></SCR"+"IPT>\n");
+
+
+
+document.write("<scr"+"ipt src=\""+(window.location.protocol=='https:' ? "https://aka-cdn.adtechus.com" : "http://aka-cdn-ns.adtechus.com")+"/media/moat/adtechbrands092348fjlsmdhlwsl239fh3df/moatad.js#moatClientLevel1=5443&moatClientLevel2=194722&moatClientLevel3=634599&moatClientLevel4=4170840&zMoatMaster=8173658&zMoatFlight=9482343&zMoatBanner=25964654&zURL=http&zMoatPlacementId=4170840&zMoatAdId=9482343&zMoatCreative=0&zMoatBannerID=1&zMoatCustomVisp=50&zMoatCustomVist=1000&zMoatIsAdvisGoal=0&zMoatEventUrl=&zMoatSize=529&zMoatSubNetID=1&zMoatisSelected=1&zMoatadServer=adserver.adtechus.com&zMoatadVisServer=&zMoatSamplingRate=23&zMoatliveTestCookie=&zMoatRefSeqId=6EDAXYgAiIA&zMoatImpRefTs=1498002674&zMoatAlias=&zMoatVert=&zMoatBannerInfo=482069879\" type=\"text/javascript\"></scr"+"ipt>");
+document.write('<img src="http://atpixelus.alephd.com/post_adtech?zRKzakdFpBH-p4N2wwzPQkPbY4s3nH7597Ng-29.DuQklQS8oZQ.qEJNTN-LQvGhIBFC-HgxtvxpA5bwDTeSAxm.h1XNap8vBBzPhuDPil5xKpq66kSkFhillhgUcTG387lp21S8Nu0XX-7JKctS7qMVXjbzdXsdn50JVS04HN0ln0JYKn.SSs856CmP0KilU80mlfVNbNrRNaWOemWGGg==" width="1" height="1"  style="display:none;">');

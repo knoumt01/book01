@@ -1,0 +1,10 @@
+document.write("<ins class='dcmads' style='display:inline-block;width:300px;height:600px'\n");
+document.write("    data-dcm-placement='N8232.7428MOTHERJONES/B11547118.153695920'\n");
+document.write("    data-dcm-rendering-mode='script'\n");
+document.write("    data-dcm-https-only\n");
+document.write("    data-dcm-resettable-device-id=''\n");
+document.write("    data-dcm-app-id=''>\n");
+document.write("<scr"+"ipt src='https://www.googletagservices.com/dcm/dcmads.js'></scr"+"ipt>\n");
+document.write("</ins>\n");
+
+
